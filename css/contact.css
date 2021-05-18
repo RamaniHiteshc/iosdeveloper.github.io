@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Estilo nav*/
+
+
+/*estilo nav bar */
+
+.frame {
+    margin-top: 3em;
+    font-size: 1.5em;
+    color: gray;
+    cursor: pointer;
+}
+
+.frame .menu ul li.contact-link span {
+    color: #000249;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: all .5s ease-in-out .5s;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+    display: block;
+    flex: 0 1 auto;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.menu ul li :hover {
+    color: #ff5151;;
+    /*opacity: 0.6; */
+    text-decoration: underline;
+}
+
+.contact, body {
+    background-color: #fff;
+}
+
+.section-title {
+    margin-top: 1em;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.images, .datos {
+    margin-top: 4em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo {
+    margin-top: 5em;
+    width: 100%;
+}
+
+.datos {
+    margin-top: 5em;
+}
+
+.datos-container {
+    align-self: flex-start;
+}
+
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-container img.github {
+    cursor: pointer;
+    margin-top: 1.5em;
+    width: 6.5%
+}
+
+.datos-container img.linkedin {
+    cursor: pointer;
+    margin-top: 1.5em;
+    width: 4%;
+}
+
+.dowload-cv {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    background-color: #fff;
+    border: 2px solid #ff5151;
+    border-radius: 3px;
+    font-size: 1.5em;
+    color: #ff5151;
+}
+
+.text-contact {
+    font-size: 1.5em;
+    color: #828282;
+}
+
+
+/*Footer */
+
+.display-flex-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    margin-top: 4em;
+    border-top: 3px solid #d6d6da;
+    /*background-color: #d6d6da; */
+    padding: 0.5em;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 1em;
+}
+
+img.github {
+    cursor: pointer;
+    width: 3.5%;
+}
+
+img.linkedin {
+    cursor: pointer;
+    width: 2%;
+}
+
+.images {
+    align-self: flex-start;
+}
+
+@media (min-width: 601px) {
+    .logo {
+        width: 80%;
+    }
+    .dowload-cv {
+        margin-top: 2em;
+    }
+    .datos-container img.github {
+        margin-top: 1.5em;
+        width: 10%
+    }
+    .datos-container img.linkedin {
+        margin-top: 1.5em;
+        width: 6%;
+    }
+}
+
+@media (max-width:600px) {
+    .logo {
+        margin-top: 8em;
+        max-width: 80%;
+    }
+    .datos {
+        margin-top: 5em;
+    }
+    .menu ul {
+        width: 350px;
+        font-size: 0.8em;
+        justify-content: space-around;
+    }
+    .section-title {
+        font-size: 3em;
+    }
+    .dowload-cv {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        padding: 0.5em 1em;    
+        font-size: 1.5em;
+    }
+
+    .datos-container img.github {
+        margin-top: 2.5em;
+        width: 18%
+    }
+    .datos-container img.linkedin {
+        margin-top: 2.5em;
+        width: 11%;
+    }
+
+    .text-contact {
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+
+    .footer-section {
+        margin-top: 3em;
+        height: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+
+ 
+    .logo {
+        margin-top: 8em;
+        width: 30%;
+    }
+    .datos-container img.github {
+        cursor: pointer;
+        margin-top: 1.5em;
+        width: 5%
+    }
+    .datos-container img.linkedin {
+        cursor: pointer;
+        margin-top: 1.5em;
+        width: 3%;
+    }
+}
